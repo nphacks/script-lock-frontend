@@ -1,0 +1,10 @@
+.example-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 10px;
+    border: 1px solid #555;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background-image: linear-gradient(-20deg, #fcd0d7 0%, #f9e2d5 100%);;
+  }
+  

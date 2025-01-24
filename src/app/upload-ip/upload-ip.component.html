@@ -1,0 +1,19 @@
+<p>upload-ip works!</p>
+<h1>Upload IP</h1>
+<form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+    </div>
+
+    <div>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" [(ngModel)]="formData.description"></textarea>
+    </div>
+
+    <div>
+        <input type="file" #fileInput (change)="onFileChange($event)">
+    </div>
+
+    <button type="submit" [disabled]="!myForm.valid">Submit</button>
+</form>
