@@ -17,12 +17,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UploadIpComponent } from './upload-ip/upload-ip.component';
 import { FormsModule } from '@angular/forms';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    UploadIpComponent
+    UploadIpComponent,
+    SideNavComponent
   ],
   imports: [
     CommonModule,

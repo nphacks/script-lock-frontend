@@ -1,0 +1,107 @@
+/* From Uiverse.io by Yaya12085 */ 
+.custum-file-upload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cacaca;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+  }
+  
+  .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .icon svg {
+    height: 80px;
+    fill: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 400;
+    color: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  }
+
+  /* ----- */
+  .timeline {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .timeline-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .timeline-step .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .timeline-step.completed .circle {
+    background-color: green;
+  }
+  
+  .timeline-step .label {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .line {
+    height: 4px;
+    width: 100px;
+    background-color: gray;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    z-index: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .line.line-completed {
+    background-color: green; /* Change color when previous step is completed */
+  } 
+  
+  .complete-btn {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
